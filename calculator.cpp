@@ -9,7 +9,7 @@ using namespace std;
 // Calculate and display sum, difference, product, integer division, and remainder.
 
 int calculator() {
-	long n1, n2; // number 1 and 2
+	double n1, n2; // number 1 and 2
 
 	cout << endl << "  Arithmetic calculator" << endl;
 	cout << "  Enter a number: ";
@@ -24,7 +24,7 @@ int calculator() {
 	cout << "  Difference = " << n1 - n2 << endl;
 	cout << "  Product = " << n1 * n2 << endl;
 	cout << "  Ratio = " << n1 / n2 << endl;
-	cout << "  Remainder = " << n1 % n2 << endl;
+	cout << "  Remainder = " << int(n1) % int(n2) << endl;
 
 	cout << endl << "  End of task" << endl << endl;
 	return 0;
