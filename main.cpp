@@ -10,7 +10,7 @@ int student();
 int calculator();
 
 int main() {
-	start: 
+	start:
 	int target = 0;
 	cout << endl << "Enter task number (2-3): ";
 	cin >> target;
