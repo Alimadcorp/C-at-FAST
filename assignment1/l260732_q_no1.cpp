@@ -2,7 +2,7 @@
 using namespace std;
 
 int q1() {
-    cout << "This is question 1" << endl;
+    cout << "Question 1: The Bacterial Outbreak" << endl << endl;
 
-    return -1;
+    return 0;
 }

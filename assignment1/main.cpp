@@ -10,25 +10,6 @@ int q1(); int q2(); int q3(); int q4(); int q5(); int q6(); int q7(); int q8(); 
 int q10(); int q11(); int q12(); int q13(); int q14(); int q15(); int q16(); int q17();
 // predefined all functions
 
-// TEMPORARY BLOCK
-int q2() { cout << "Question 2 not implemented\n"; return 0; }
-int q3() { cout << "Question 3 not implemented\n"; return 0; }
-int q4() { cout << "Question 4 not implemented\n"; return 0; }
-int q5() { cout << "Question 5 not implemented\n"; return 0; }
-int q6() { cout << "Question 6 not implemented\n"; return 0; }
-int q7() { cout << "Question 7 not implemented\n"; return 0; }
-int q8() { cout << "Question 8 not implemented\n"; return 0; }
-int q9() { cout << "Question 9 not implemented\n"; return 0; }
-int q10() { cout << "Question 10 not implemented\n"; return 0; }
-int q11() { cout << "Question 11 not implemented\n"; return 0; }
-int q12() { cout << "Question 12 not implemented\n"; return 0; }
-int q13() { cout << "Question 13 not implemented\n"; return 0; }
-int q14() { cout << "Question 14 not implemented\n"; return 0; }
-int q15() { cout << "Question 15 not implemented\n"; return 0; }
-int q16() { cout << "Question 16 not implemented\n"; return 0; }
-int q17() { cout << "Question 17 not implemented\n"; return 0; }
-// :P
-
 int main() {
 	start:
     system("clear");
