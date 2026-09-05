@@ -14,8 +14,8 @@ int main() {
 	start:
     system("clear");
 	int target = 0, r = 0; // r for result, if not 0, the program crashed..
-	cout << endl << "Enter question number (1-17): ";
-	cin >> target;
+	cout << "Enter question number (1-17): ";
+	if (!(cin >> target)) { cin.clear(); cin.ignore(10000, '\n'); goto start; }
     run:
     cout << endl;
 	switch (target) {
@@ -45,8 +45,8 @@ int main() {
         cout << endl << "Program crashed with exit code of " << r << " press r to retry, g to select a different question, n for next question, enter q to quit: ";
     }
 
-	char o;
-    cin >> o;
+    char o;
+    if (!(cin >> o)) { cout << "\nWhy...\n\n"; return 0; }
 
     switch(o) {
         case 'n': case 'N': target++; if (target > 17) target = 1;
