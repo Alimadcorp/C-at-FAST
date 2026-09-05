@@ -1,5 +1,4 @@
 #include<iostream>
-#include<conio.h>
 using namespace std;
 
 // Written by Muhammad Ali
@@ -11,12 +10,33 @@ int q1(); int q2(); int q3(); int q4(); int q5(); int q6(); int q7(); int q8(); 
 int q10(); int q11(); int q12(); int q13(); int q14(); int q15(); int q16(); int q17();
 // predefined all functions
 
+// TEMPORARY BLOCK
+int q2() { cout << "Question 2 not implemented\n"; return 0; }
+int q3() { cout << "Question 3 not implemented\n"; return 0; }
+int q4() { cout << "Question 4 not implemented\n"; return 0; }
+int q5() { cout << "Question 5 not implemented\n"; return 0; }
+int q6() { cout << "Question 6 not implemented\n"; return 0; }
+int q7() { cout << "Question 7 not implemented\n"; return 0; }
+int q8() { cout << "Question 8 not implemented\n"; return 0; }
+int q9() { cout << "Question 9 not implemented\n"; return 0; }
+int q10() { cout << "Question 10 not implemented\n"; return 0; }
+int q11() { cout << "Question 11 not implemented\n"; return 0; }
+int q12() { cout << "Question 12 not implemented\n"; return 0; }
+int q13() { cout << "Question 13 not implemented\n"; return 0; }
+int q14() { cout << "Question 14 not implemented\n"; return 0; }
+int q15() { cout << "Question 15 not implemented\n"; return 0; }
+int q16() { cout << "Question 16 not implemented\n"; return 0; }
+int q17() { cout << "Question 17 not implemented\n"; return 0; }
+// :P
+
 int main() {
 	start:
+    system("clear");
 	int target = 0, r = 0; // r for result, if not 0, the program crashed..
 	cout << endl << "Enter question number (1-17): ";
 	cin >> target;
     run:
+    cout << endl;
 	switch (target) {
         case 1: r = q1(); break;
         case 2: r = q2(); break;
@@ -39,17 +59,21 @@ int main() {
 	}
 
     if (r == 0) {
-	    cout << endl << "Press or g to select different question, n for next question, press any other key to exit: ";
+	    cout << endl << "Enter g to select different question, n for next question, enter q to quit: ";
     } else {
-        cout << endl << "Program crashed with exit code of " << r << " press r to retry, g to select a different question, n for next question, any other key to exit: ";
+        cout << endl << "Program crashed with exit code of " << r << " press r to retry, g to select a different question, n for next question, enter q to quit: ";
     }
-    
-	char o = _getche();
+
+	char o;
+    cin >> o;
+
     switch(o) {
-        case 'n': case 'N': target++; // didnt add break so that after increment it goes back to start lol
-        case 'g': case 'G': goto start; // didnt add break coz goto exits switch
+        case 'n': case 'N': target++; if (target > 17) target = 1;
         case 'r': case 'R': goto run;
+        case 'g': case 'G': goto start;
+        case 'q': case 'Q': cout << "\nQuitting...\n\n"; return 0;
+        default: cout << "\nQuitting anyways -_-\n\n";
     }
-	cout << "\nQuitting...\n";
+	
 	return 0;
 }
