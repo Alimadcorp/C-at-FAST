@@ -5,7 +5,7 @@ using namespace std;
 // Written by Muhammad Ali
 // 9/5/2026
 // As there were issues with multiple files, this code exists to launch the needed one
-// 
+// https://github.com/Alimadcorp/C-at-FAST/blob/master/assignment1/main.cpp
 
 int q1(); int q2(); int q3(); int q4(); int q5(); int q6(); int q7(); int q8(); int q9();
 int q10(); int q11(); int q12(); int q13(); int q14(); int q15(); int q16(); int q17();
