@@ -1,27 +1,28 @@
 #include<iostream>
 using namespace std;
 
-// Task 01 - Student Bio Data
-// Input, store and display student age, roll number, semester number, and one section character.
+// Task 06 - Simple Salary and Savings
+// Input hourly pay rate, hours of work, and monthly expense, output salary and savings.
 
 int q6() {
-	int age, roll, semester;
-	char section;
+	double hourlyRate, hoursWorkedThisMonth, monthlyExpense, salary, savings;
 
-	cout << "Enter age: ";
-	cin >> age;
-	cout << "Enter roll number: ";
-	cin >> roll;
-	cout << "Enter semester number: ";
-	cin >> semester;
-	cout << "Enter section letter: ";
-	cin >> section;
+	cout << "Enter hourly rate of earning: ";
+	cin >> hourlyRate;
+	cout << "Enter hours worked this month: ";
+	cin >> hoursWorkedThisMonth;
+	cout << "Enter monthly expense: ";
+	cin >> monthlyExpense;
 
-	cout << endl << "Your Bio Data\n\n";
-	cout << "Age: " << age << endl;
-	cout << "Roll number: " << roll << endl;
-	cout << "Semester: " << semester << endl;
-	cout << "Section: " << section << endl;
+	salary = hourlyRate * hoursWorkedThisMonth;
+	savings = salary - monthlyExpense;
+
+	cout << endl << "--- Savings Calculator ---\n\n";
+	cout << "This month's salary: " << salary << endl;
+	cout << "Total expense: " << monthlyExpense << endl;
+	cout << "Savings: " << savings << endl;
+	cout << "See you next month! ^.^" << endl;
+	cout << "Written by Muhammad Ali" << endl;
 
 	return 0;
 }

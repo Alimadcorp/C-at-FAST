@@ -1,27 +1,21 @@
 #include<iostream>
 using namespace std;
 
-// Task 01 - Student Bio Data
-// Input, store and display student age, roll number, semester number, and one section character.
+// Task 05 - Temperature Converter
+// Input temperature in Celsius, output in Fahrenheit and Kelvin.
 
 int q5() {
-	int age, roll, semester;
-	char section;
+	double celsius, farhenheit, kelvin;
 
-	cout << "Enter age: ";
-	cin >> age;
-	cout << "Enter roll number: ";
-	cin >> roll;
-	cout << "Enter semester number: ";
-	cin >> semester;
-	cout << "Enter section letter: ";
-	cin >> section;
+	cout << "Enter temprature in celcius (C): ";
+	cin >> celsius;
 
-	cout << endl << "Your Bio Data\n\n";
-	cout << "Age: " << age << endl;
-	cout << "Roll number: " << roll << endl;
-	cout << "Semester: " << semester << endl;
-	cout << "Section: " << section << endl;
+	farhenheit = (celsius * 9.0/5) + 32;
+	kelvin = celsius + 273.15;
+
+	cout << endl << "Temprature in Farhen (F): " << farhenheit << endl;
+	cout << "Temprature in Celius (C): " << celsius << endl;
+	cout << "Temprature in Kelvin (K): " << kelvin << endl;
 
 	return 0;
 }

@@ -10,14 +10,22 @@ using namespace std;
 int q1(); int q2(); int q3(); int q4(); int q5(); int q6();
 // predefined all functions for each task
 
+void clrscr() { // clear screen command is different for windows and linux operating systems
+#if defined(_WIN32) || defined(_WIN64)
+    system("cls");
+#else
+    system("clear");
+#endif
+}
+
 int main() {
 start:
-    system("cls");
+    clrscr();
     int target = 0, r = 0; // r for result, if not 0, the program crashed..
     cout << "Lab 03" << endl << "Enter question number (1-6): ";
     if (!(cin >> target)) { cin.clear(); cin.ignore(10000, '\n'); goto start; }
 run:
-    system("cls");
+    clrscr();
     switch (target) {
     case 1: r = q1(); break;
     case 2: r = q2(); break;
