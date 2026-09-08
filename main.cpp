@@ -12,9 +12,9 @@ int q1(); int q2(); int q3(); int q4(); int q5(); int q6();
 
 int main() {
 start:
-    system("clear");
+    system("cls");
     int target = 0, r = 0; // r for result, if not 0, the program crashed..
-    cout << "Enter question number (1-6): ";
+    cout << "Lab 03" << endl << "Enter question number (1-6): ";
     if (!(cin >> target)) { cin.clear(); cin.ignore(10000, '\n'); goto start; }
 run:
     cout << endl;
