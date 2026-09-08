@@ -17,6 +17,7 @@ start:
     cout << "Lab 03" << endl << "Enter question number (1-6): ";
     if (!(cin >> target)) { cin.clear(); cin.ignore(10000, '\n'); goto start; }
 run:
+    system("cls");
     cout << endl;
     switch (target) {
     case 1: r = q1(); break;

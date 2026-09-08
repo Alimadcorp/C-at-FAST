@@ -5,23 +5,21 @@ using namespace std;
 // Enter price and quantity of books, display those and total bill.
 
 int q2() {
-	int age, roll, semester;
-	char section;
+	double rate, cost;
+	int bookQty;
 
-	cout << "Enter age: ";
-	cin >> age;
-	cout << "Enter roll number: ";
-	cin >> roll;
-	cout << "Enter semester number: ";
-	cin >> semester;
-	cout << "Enter section letter: ";
-	cin >> section;
+	cout << "Enter rate of book: ";
+	cin >> rate;
+	cout << "Enter amount of books purchased: ";
+	cin >> bookQty;
 
-	cout << endl << "Your Bio Data\n\n";
-	cout << "Age: " << age << endl;
-	cout << "Roll number: " << roll << endl;
-	cout << "Semester: " << semester << endl;
-	cout << "Section: " << section << endl;
+	cost = rate * bookQty;
+
+	cout << endl << "Your book purchase bill: \n\n";
+	cout << "Rate: " << rate << endl;
+	cout << "Quantity of book: " << bookQty << endl;
+	cout << "Subtotal: " << cost << endl;
+	cout << endl << "Total: " << cost << endl;
 
 	return 0;
 }
