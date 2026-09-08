@@ -128,12 +128,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="task01.cpp" />
-    <ClCompile Include="task02.cpp" />
-    <ClCompile Include="task03.cpp" />
-    <ClCompile Include="task04.cpp" />
-    <ClCompile Include="task05.cpp" />
-    <ClCompile Include="task06.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" />

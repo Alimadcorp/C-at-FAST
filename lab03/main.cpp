@@ -3,7 +3,7 @@ using namespace std;
 
 // Written by Muhammad Ali
 // Initially on 9/5/2026
-// Lab XX - MM/DD/YYYY
+// Lab 03 - 9/8/2026
 // As there were issues with multiple files, this code exists to launch the needed one
 // https://github.com/Alimadcorp/C-at-FAST/blob/master/main.cpp
 
