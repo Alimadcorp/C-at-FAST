@@ -17,7 +17,7 @@ int q1() {
 	cout << "Enter section letter: ";
 	cin >> section;
 
-	cout << endl << "Your Bio Data\n\n";
+	cout << endl << "--- Your Bio Data ---\n\n";
 	cout << "Age: " << age << endl;
 	cout << "Roll number: " << roll << endl;
 	cout << "Semester: " << semester << endl;

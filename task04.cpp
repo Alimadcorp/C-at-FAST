@@ -1,27 +1,27 @@
 #include<iostream>
 using namespace std;
 
-// Task 01 - Student Bio Data
-// Input, store and display student age, roll number, semester number, and one section character.
+// Task 04 - Rectangle and Square Calculator
+// Input length and width, output area of a rectangle.
 
 int q4() {
-	int age, roll, semester;
-	char section;
+	double length, width, area, areaSum = 0;
+beninging:
+	char i = ' ';
 
-	cout << "Enter age: ";
-	cin >> age;
-	cout << "Enter roll number: ";
-	cin >> roll;
-	cout << "Enter semester number: ";
-	cin >> semester;
-	cout << "Enter section letter: ";
-	cin >> section;
+	cout << "Enter width of a rectangle: ";
+	cin >> width;
+	cout << "Enter length of the rectangle: ";
+	cin >> length;
 
-	cout << endl << "Your Bio Data\n\n";
-	cout << "Age: " << age << endl;
-	cout << "Roll number: " << roll << endl;
-	cout << "Semester: " << semester << endl;
-	cout << "Section: " << section << endl;
+	areaSum += area = length * width;
+
+	cout << endl << "Area of this rectangle: " << area << endl;
+	cout << "Summed area: " << areaSum << endl;
+	cout << endl << "Enter n to calculate new area: ";
+	
+	cin >> i;
+	if (i == 'n') { goto beninging; }
 
 	return 0;
 }

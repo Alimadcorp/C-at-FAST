@@ -15,7 +15,7 @@ int q2() {
 
 	cost = rate * bookQty;
 
-	cout << endl << "Your book purchase bill: \n\n";
+	cout << endl << "--- Book Purchase Bill ---\n\n";
 	cout << "Rate: " << rate << endl;
 	cout << "Quantity of book: " << bookQty << endl;
 	cout << "Subtotal: " << cost << endl;

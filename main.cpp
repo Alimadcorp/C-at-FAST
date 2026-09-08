@@ -18,7 +18,6 @@ start:
     if (!(cin >> target)) { cin.clear(); cin.ignore(10000, '\n'); goto start; }
 run:
     system("cls");
-    cout << endl;
     switch (target) {
     case 1: r = q1(); break;
     case 2: r = q2(); break;

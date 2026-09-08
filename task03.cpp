@@ -5,23 +5,24 @@ using namespace std;
 // Input marks of 3 subjects out of 100, output total, average, and percentage.
 
 int q3() {
-	int age, roll, semester;
-	char section;
+	int marks1, marks2, marks3, max = 300;
+	double totalMarks, percentage, average;
 
-	cout << "Enter age: ";
-	cin >> age;
-	cout << "Enter roll number: ";
-	cin >> roll;
-	cout << "Enter semester number: ";
-	cin >> semester;
-	cout << "Enter section letter: ";
-	cin >> section;
+	cout << "Enter marks in English: ";
+	cin >> marks1;
+	cout << "Enter marks in Math: ";
+	cin >> marks2;
+	cout << "Enter marks in Physics: ";
+	cin >> marks3;
 
-	cout << endl << "Your Bio Data\n\n";
-	cout << "Age: " << age << endl;
-	cout << "Roll number: " << roll << endl;
-	cout << "Semester: " << semester << endl;
-	cout << "Section: " << section << endl;
+	totalMarks = marks1 + marks2 + marks3;
+	percentage = 100 * totalMarks / max;
+	average = totalMarks / 3.0;
+
+	cout << endl << "--- Marks Summary ---\n\n";
+	cout << "Total marks: " << totalMarks << endl;
+	cout << "Average marks: " << average << endl;
+	cout << "Percentage: " << percentage << endl;
 
 	return 0;
 }
