@@ -12,12 +12,16 @@ int q10(); int q11(); int q12(); int q13(); int q14(); int q15(); int q16(); int
 
 int main() {
 	start:
-    system("clear");
 	int target = 0, r = 0; // r for result, if not 0, the program crashed..
 	cout << "Enter question number (1-17): ";
 	if (!(cin >> target)) { cin.clear(); cin.ignore(10000, '\n'); goto start; }
     run:
     cout << endl;
+#if defined(_WIN32) || defined(_WIN64)
+    system("cls");
+#else
+    system("clear");
+#endif
 	switch (target) {
         case 1: r = q1(); break;
         case 2: r = q2(); break;
