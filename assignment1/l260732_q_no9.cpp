@@ -4,8 +4,8 @@ using namespace std;
 
 int q9() {
     double P, r, n, t, A, interest;
+    
     cout << "Question 9: Compound Interest Calculator" << endl << endl;
-
     cout << "Enter principal amount: ";
     cin >> P;
     cout << "Enter annual interest rate: ";

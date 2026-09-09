@@ -29,6 +29,5 @@ int q3() {
     cout << endl << "Average speed: " << average;
     cout << endl << "Speed of runner two: " << v2;
     cout << endl << "Deviation of runner two's speed from teh avarage: " << speedDev2 << endl;
-
     return 0;
 }

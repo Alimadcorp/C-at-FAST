@@ -4,6 +4,7 @@ using namespace std;
 int q8() {
     int hour, minute, second, nHour, nMinute, nSecond;
     int secondsToAdd;
+    
     cout << "Question 8: Digital Clock Calculation" << endl << endl;
     cout << "Enter hour: ";
     cin >> hour;

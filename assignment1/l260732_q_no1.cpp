@@ -13,8 +13,6 @@ int q1() {
     finalPopulation = p0 * 8;
 
     cout << endl << "Time elapsed: " << (t * 3) / 60 << "h " << (t * 3) % 60;
-    cout << endl << "Final population: " << finalPopulation; // simply doubled thrice
-    cout << endl;
-
+    cout << endl << "Final population: " << finalPopulation << endl; // simply doubled thrice
     return 0;
 }

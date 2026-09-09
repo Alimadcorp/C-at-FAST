@@ -13,6 +13,5 @@ int q2() {
     cout << "Rs. 1000 notes: " << floor((withdrawlAmt % 5000) / 1000.0) << endl;
     cout << "Rs.  100 notes: " << floor((withdrawlAmt % 1000) / 100.0) << endl;
     cout << "Rs.   10 notes: " << floor((withdrawlAmt % 100) / 10.0) << endl;
-
     return 0;
 }

@@ -19,8 +19,6 @@ int q4() {
     
     cout << endl << "Digits: " << d1 << " " << d2 << " " << d3 << " " << d4;
     cout << endl << "Verification code: " << code;
-    cout << endl << "Mirrored ID: " << mirrorId;
-    cout << endl;
-
+    cout << endl << "Mirrored ID: " << mirrorId << endl;
     return 0;
 }

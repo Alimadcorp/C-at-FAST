@@ -33,8 +33,6 @@ int q5() {
     cout << endl << "Area of lawn: " << innerArea;
     cout << endl << "Area of path: " << pathArea;
     cout << endl << "Perimeter: " << perimeter;
-    cout << endl << "Total cost: " << totalCost;
-    cout << endl;
-
+    cout << endl << "Total cost: " << totalCost << endl;
     return 0;
 }

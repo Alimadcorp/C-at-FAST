@@ -13,8 +13,6 @@ int q6() {
     minutes = (totalSeconds % 3600) / 60;
     seconds = totalSeconds % 60;
 
-    cout << endl << hours << " hours, " << minutes << " minutes, " << seconds << " seconds";
-    cout << endl;
-
+    cout << endl << hours << " hours, " << minutes << " minutes, " << seconds << " seconds" << endl;
     return 0;
 }

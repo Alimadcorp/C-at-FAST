@@ -3,8 +3,8 @@ using namespace std;
 
 int q13() {
     int age, clearance, overrideCode, access;
+    
     cout << "Question 13. Logical Access Matrix" << endl << endl;
-
     cout << "Enter age: ";
     cin >> age;
     cout << "Enter clearance: ";

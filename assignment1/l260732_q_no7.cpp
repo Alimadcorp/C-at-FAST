@@ -20,7 +20,6 @@ int q7() {
     cout << endl << "Tens digit: " << d2;
     cout << endl << "Ones digit: " << d3;
     cout << endl << "Sum of digits: " << sum;
-    cout << endl << "Digits in reverse: " << reverse;
-    cout << endl;
+    cout << endl << "Digits in reverse: " << reverse << endl;
     return 0;
 }

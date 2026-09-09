@@ -4,8 +4,8 @@ using namespace std;
 int q11() {
     int math, physics, programming;
     double average;
+    
     cout << "Question 11: Student Average Calculator" << endl << endl;
-
     cout << "Enter obtained marks in math: ";
     cin >> math;
     cout << "Enter obtained marks in physics: ";
