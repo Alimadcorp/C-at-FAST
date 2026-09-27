@@ -28,7 +28,7 @@ int main() {
             } else if (dx == -k) { // left
                 offset = 4 * k + (k + dy); // acc from two walls
             } else { // bottom
-                offset = 6 * k + (dx + k); // acc from three walls
+                offset = 6 * k + (k + dx); // acc from three walls
             }
             cout << base + offset << "\t";
         }
