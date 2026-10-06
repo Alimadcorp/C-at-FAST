@@ -130,7 +130,19 @@
     <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="quiz01\q1.cpp" />
+    <ClCompile Include="lab07\main.cpp" />
+    <ClCompile Include="lab07\task01.cpp" />
+    <ClCompile Include="lab07\task02.cpp" />
+    <ClCompile Include="lab07\task03.cpp" />
+    <ClCompile Include="lab07\task04.cpp" />
+    <ClCompile Include="lab07\task05.cpp" />
+    <ClCompile Include="lab07\task06.cpp" />
+    <ClCompile Include="lab07\task07.cpp" />
+    <ClCompile Include="lab07\task08.cpp" />
+    <ClCompile Include="lab07\task09.cpp" />
+    <ClCompile Include="lab07\task10.cpp" />
+    <ClCompile Include="lab07\task11.cpp" />
+    <ClCompile Include="lab07\task12.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

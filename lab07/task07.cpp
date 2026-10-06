@@ -1,23 +1,31 @@
 #include<iostream>
 using namespace std;
 
-// Task 07 - Print centered triangle
+// Task 07 - Odd vs Even
 
 int q7() {
-	unsigned int size;
+	const int length = 12;
+	int numbers[length];
+	int odd = 0, even = 0;
 
-	cout << "Enter a size: ";
-	cin >> size;
+	cout << "Enter " << length << " numbers separated by spaces: ";
+	for (int i = 0; i < length; i++) {
+		cin >> numbers[i];
+	}
 
 	cout << endl;
 
-	for (int i = 1; i <= size; i++) {
-		for (int j = 1; j <= size - i; j++) { cout << " "; }
-		for (int j = 1; j <= i; j++) {
-			cout << "* ";
+	for (int i = 0; i < length; i++) {
+		if (numbers[i] % 2 == 0) {
+			even++;
 		}
-		cout << endl;
+		else {
+			odd++;
+		}
 	}
+
+	cout << "Even: " << even << endl << "Odd: " << odd << endl;
+	cout << endl; 
 
 	return 0;
 }

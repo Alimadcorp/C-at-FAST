@@ -1,23 +1,28 @@
 #include<iostream>
 using namespace std;
 
-// Task 05 - Print continuously increasing numbered triangle
+// Task 05 - 2nd largest distinct value
 
 int q5() {
-	unsigned int size;
+	const int length = 8;
+	unsigned int numbers[length], max = 0, lmax = 0;
 
-	cout << "Enter a size: ";
-	cin >> size;
-
+	cout << "Enter " << length << " numbers separated by spaces: ";
+	for (int i = 0; i < length; i++) {
+		cin >> numbers[i];
+	}
 	cout << endl;
 
-	for (int i = 1; i <= size; i++) {
-		for (int j = 1; j <= i; j++) {
-			cout << (i * i - i + 2) / 2 + j - 1 << " "; 
-			// using formula for continuous integer acceleration of 1 
+	for (int i = 0; i < length; i++) {
+		if (numbers[i] > max) {
+			lmax = max;
+			max = numbers[i];
 		}
-		cout << endl;
 	}
 
+	cout << "Largest: " << max;
+	cout << "Second largest: " << lmax;
+	cout << endl;
+
 	return 0;
-}
+}	

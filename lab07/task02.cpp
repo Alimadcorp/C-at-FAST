@@ -1,26 +1,24 @@
 #include<iostream>
 using namespace std;
 
-// Task 02 - Print triangle
+// Task 02 - Reverse print
 
 int q2() {
-	unsigned int size;
+	const int length = 8;
+	int numbers[length];
 
-	cout << "Enter a size: ";
-	cin >> size;
+	cout << "Enter " << length << " numbers separated by spaces: ";
+	for (int i = 0; i < length; i++) {
+		cin >> numbers[i];
+	}
 
 	cout << endl;
 
-	int i = 1;
-	while (i <= size) {
-		int j = 1;
-		while (j <= i) {
-			cout << "* ";
-			j++;
-		}
-		cout << endl;
-		i++;
+	for (int i = 7; i >= 0; i--) {
+		cout << numbers[i] << " ";
 	}
+
+	cout << endl;
 
 	return 0;
 }

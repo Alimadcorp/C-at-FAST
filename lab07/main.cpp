@@ -3,9 +3,9 @@ using namespace std;
 
 // Written by Muhammad Ali
 // Initially on 9/5/2026
-// Lab 05 - 9/29/2026
+// Lab 07 - 10/6/2026
 // As there were issues with multiple files, this code exists to launch the needed one
-// https://github.com/Alimadcorp/C-at-FAST/blob/master/lab05/main.cpp
+// https://github.com/Alimadcorp/C-at-FAST/blob/master/lab07/main.cpp
 
 int q1(); int q2(); int q3(); int q4(); int q5(); int q6(); int q7(); int q8(); int q9(); int q10(); int q11(); int q12();
 // predefined all functions for each task
@@ -22,7 +22,7 @@ int main() {
 start:
     clrscr();
     int target = 0, r = 0; // r for result, if not 0, the program crashed..
-    cout << "Lab 05" << endl << "Enter question number (1-12): ";
+    cout << "Lab 07" << endl << "Enter question number (1-12): ";
     if (!(cin >> target)) { cin.clear(); cin.ignore(10000, '\n'); goto start; }
 run:
     clrscr();

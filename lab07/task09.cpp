@@ -1,49 +1,31 @@
 #include<iostream>
 using namespace std;
 
-// Task 09 - Switch based triangle
+// Task 09 - Ripple delete
 
 int q9() {
-	unsigned int size;
-	int opt;
-	
-	cout << "Modes: 1) triangle 2) inverted triangle 3) number triangle" << endl;
-	cout << "Enter mode (1-3): ";
-	cin >> opt;
-	cout << "Enter a size: ";
-	cin >> size;
+	const int length = 8;
+	int numbers[length];
+	int rm = 0;
 
+	cout << "Enter " << length << " numbers separated by spaces: ";
+	for (int i = 0; i < length; i++) {
+		cin >> numbers[i];
+	}
+	
+	cout << "Enter index to remove: ";
+	cin >> rm;
 	cout << endl;
 
-	switch (opt) {
-	case 1:
-		for (int i = 1; i <= size; i++) {
-			int j = 1;
-			while (j <= i) {
-				cout << "* ";
-				j++;
-			}
-			cout << endl;
-		}
-		break;
-	case 2:
-		for (int i = size; i >= 1; i--) {
-			for (int j = 1; j <= i; j++) {
-				cout << "* ";
-			}
-			cout << endl;
-		}
-		break;
-	case 3:
-		for (int i = 1; i <= size; i++) {
-			for (int j = 1; j <= i; j++) {
-				cout << j << " ";
-			}
-			cout << endl;
-		}
-		break;
-	default: cout << "Invalid input" << endl;
+	for (int i = rm; i < length - 1; i++) {
+		numbers[i] = numbers[i + 1];
 	}
+
+	for (int i = 0; i < length - 1; i++) {
+		cout << numbers[i] << " ";
+	}
+
+	cout << endl;
 
 	return 0;
 }
