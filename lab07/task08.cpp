@@ -18,12 +18,10 @@ int q8() {
 	for (int i = 0; i < length; i++) {
 		shifted[(i + 1) % length] = numbers[i];
 	}
-
 	for (int i = 0; i < length; i++) {
 		cout << shifted[i] << " ";
 	}
 
 	cout << endl;
-
 	return 0;
 }

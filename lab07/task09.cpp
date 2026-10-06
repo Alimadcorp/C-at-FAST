@@ -20,12 +20,10 @@ int q9() {
 	for (int i = rm; i < length - 1; i++) {
 		numbers[i] = numbers[i + 1];
 	}
-
 	for (int i = 0; i < length - 1; i++) {
 		cout << numbers[i] << " ";
 	}
 
 	cout << endl;
-
 	return 0;
 }

@@ -17,10 +17,12 @@ int q5() {
 		if (numbers[i] > max) {
 			lmax = max;
 			max = numbers[i];
+		} else if (numbers[i] > lmax && numbers[i] < max) {
+			lmax = numbers[i];
 		}
 	}
 
-	cout << "Largest: " << max;
+	cout << "Largest: " << max << endl;
 	cout << "Second largest: " << lmax;
 	cout << endl;
 

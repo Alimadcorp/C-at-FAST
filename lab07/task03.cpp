@@ -19,7 +19,7 @@ int q3() {
 
 	for (int i = 0; i < length; i++) {
 		if (numbers[i] == key) {
-			cout << "Found at index " << i;
+			cout << "Found at index " << i << endl;
 		}
 	}
 

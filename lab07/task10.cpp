@@ -1,22 +1,24 @@
 #include<iostream>
 using namespace std;
 
-// Task 10 - Safe integer menu
+// Task 10 - Sorting arrays
 
 int q10() {
-	char dig;
+	const int l = 8;
+	int array[l];
 
-	cout << "Enter a numeric digit: ";
-	cin >> dig;
+	cout << "Enter " << l << " numbers separated by spaces: ";
+	for (int i = 0; i < l; i++) {
+		cin >> array[i];
+	}
 
 	cout << endl;
 
-	if (dig >= '0' && dig <= '9') {
-		cout << "Oki" << endl;
-	}
-	else {
-		cout << "Invalid input. Please enter an integer only." << endl;
+	cout << "Sorted array: ";
+	for (int i = 0; i < l; i++) {
+		cout << array[i] << " ";
 	}
 
+	cout << endl;
 	return 0;
 }
