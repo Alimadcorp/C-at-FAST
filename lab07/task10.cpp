@@ -1,5 +1,7 @@
 #include<iostream>
+#include <chrono>
 using namespace std;
+using namespace chrono;
 
 // Task 10 - Sorting arrays WITH QUICK SORT BECAUSE YES
 
@@ -14,6 +16,7 @@ int q10() {
 
 	cout << endl;
 
+    auto start = high_resolution_clock::now();
     int stack[8], top = 0;
     // push index 0 and 7 (boundaries) to stack
     stack[top] = 0; top++;
@@ -48,10 +51,13 @@ int q10() {
             stack[top] = h;
         }
     }
+
+    auto duration = duration_cast<nanoseconds>(high_resolution_clock::now() - start);
 	cout << "Sorted array: ";
 	for (int i = 0; i < l; i++) {
 		cout << array[i] << " ";
 	}
+    cout << endl << "Sorted in " << duration.count() << "ns";
 
 	cout << endl;
 	return 0;
