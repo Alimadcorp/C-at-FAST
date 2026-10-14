@@ -1,54 +1,49 @@
-#include <cmath>
 #include <iostream>
 
 using namespace std;
 
-// Question 4: Sorting?
+// Question 4: Even/Odd Index Sorting
 // Written by Muhammad Ali on 15/10/2026
 // 26L-0732
-// Sample input: 100 10 2 3 27 9 19 13
 
 int main() {
-  const int max = 2048;
-  int arr[max], size = 0, inp, temp;
+  const int max_values = 100;
+  int arr[max_values], size = 0, inp;
 
-  cout
-      << "Enter an array of space separated numbers below, write -1 at the end:"
-      << endl;
-
-  while (size < max && cin >> inp) {
-    arr[size++] = inp;
-    if (cin.peek() == '\n' || inp == -1) {
+  cout << "Enter space-separated numbers (-1 to stop):" << endl;
+  while (size < max_values && cin >> inp) {
+    if (inp == -1)
       break;
-    }
+    arr[size++] = inp;
   }
 
-  for (int i = 0; i < size; i += 2) {
+  // sort even
+  for (int i = 2; i < size; i += 2) {
     int key = arr[i];
-    int j = i - 1;
-
+    int j = i - 2;
     while (j >= 0 && arr[j] > key) {
-      arr[j + 1] = arr[j];
-      j--;
+      arr[j + 2] = arr[j];
+      j -= 2;
     }
-    arr[j + 1] = key;
+    arr[j + 2] = key;
   }
 
-  for (int i = 1; i < size; i += 2) {
+  // sort odd in descending
+  for (int i = 3; i < size; i += 2) {
     int key = arr[i];
-    int j = i - 1;
-
-    while (j >= 0 && arr[j] > key) {
-      arr[j + 1] = arr[j];
-      j--;
+    int j = i - 2;
+    while (j >= 1 && arr[j] < key) {
+      arr[j + 2] = arr[j];
+      j -= 2;
     }
-    arr[j + 1] = key;
+    arr[j + 2] = key;
   }
 
   cout << endl << "Result:" << endl;
   for (int i = 0; i < size; i++) {
     cout << arr[i] << " ";
   }
+  cout << endl;
 
   return 0;
 }
