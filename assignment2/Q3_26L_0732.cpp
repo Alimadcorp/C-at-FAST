@@ -6,6 +6,7 @@ using namespace std;
 // Question 3: What do i even call this
 // Written by Muhammad Ali on 15/10/2026
 // 26L-0732
+// Sample input: 2 5 4 17 34 11 10 8 18 24 23 89 1
 
 int main() {
   const int max = 2048;
