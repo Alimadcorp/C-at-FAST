@@ -130,19 +130,19 @@
     <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="lab07\main.cpp" />
-    <ClCompile Include="lab07\task01.cpp" />
-    <ClCompile Include="lab07\task02.cpp" />
-    <ClCompile Include="lab07\task03.cpp" />
-    <ClCompile Include="lab07\task04.cpp" />
-    <ClCompile Include="lab07\task05.cpp" />
-    <ClCompile Include="lab07\task06.cpp" />
-    <ClCompile Include="lab07\task07.cpp" />
-    <ClCompile Include="lab07\task08.cpp" />
-    <ClCompile Include="lab07\task09.cpp" />
-    <ClCompile Include="lab07\task10.cpp" />
-    <ClCompile Include="lab07\task11.cpp" />
-    <ClCompile Include="lab07\task12.cpp" />
+    <ClCompile Include="lab09\main.cpp" />
+    <ClCompile Include="lab09\task01.cpp" />
+    <ClCompile Include="lab09\task02.cpp" />
+    <ClCompile Include="lab09\task03.cpp" />
+    <ClCompile Include="lab09\task04.cpp" />
+    <ClCompile Include="lab09\task05.cpp" />
+    <ClCompile Include="lab09\task06.cpp" />
+    <ClCompile Include="lab09\task07.cpp" />
+    <ClCompile Include="lab09\task08.cpp" />
+    <ClCompile Include="lab09\task09.cpp" />
+    <ClCompile Include="lab09\task10.cpp" />
+    <ClCompile Include="lab09\task11.cpp" />
+    <ClCompile Include="lab09\task12.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

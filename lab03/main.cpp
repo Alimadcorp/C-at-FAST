@@ -5,7 +5,7 @@ using namespace std;
 // Initially on 9/5/2026
 // Lab 03 - 9/8/2026
 // As there were issues with multiple files, this code exists to launch the needed one
-// https://github.com/Alimadcorp/C-at-FAST/blob/master/main.cpp
+// https://github.com/Alimadcorp/C-at-FAST/blob/master/lab03/main.cpp
 
 int q1(); int q2(); int q3(); int q4(); int q5(); int q6();
 // predefined all functions for each task
