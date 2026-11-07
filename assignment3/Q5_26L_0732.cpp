@@ -2,6 +2,13 @@
 #include <string>
 using namespace std;
 
+/*
+C A T X S
+A A C A T
+T A T Y A
+T T A C C
+*/
+
 const int MAX = 20;
 int dr[] = {0, 0, 1, -1, 1, -1, 1, -1};
 int dc[] = {1, -1, 0, 0, 1, -1, -1, 1};
@@ -34,7 +41,7 @@ int countW(char g[MAX][MAX], int r, int c, const string &w) {
 
 int main() {
   int r, c;
-  cout << "Rows & Cols: ";
+  cout << "Rows & Columns: ";
   cin >> r >> c;
   if (r < 3 || r > MAX || c < 3 || c > MAX)
     return 0;

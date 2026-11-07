@@ -87,7 +87,8 @@ int main() {
   vector<int> r, c;
   int choice;
   do {
-    cout << "\n1.Reg 2.Drop 3.Xfer 4.Chk 5.Common 6.Disp 7.Exit\nChoice: ";
+    cout << "\n1.Register 2.Drop 3.Transfer 4.Check 5.Common 6.Display "
+            "7.Exit\nChoice: ";
     cin >> choice;
     if (choice == 1)
       reg(r, c);
