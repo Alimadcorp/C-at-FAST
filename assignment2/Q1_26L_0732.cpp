@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-// Question :
+// Question: Print distance from edge
 // Written by Muhammad Ali on 14/10/2026
 // 26L-0732
 
@@ -10,7 +10,7 @@ int main() {
 
   cout << "Enter size: ";
   cin >> N;
-  size = 2 * N - 1; // (n - 1) numbers to left and right + 1 in center
+  size = 2 * N - 1; // ((n - 1) numbers to left and right) + 1 in center
 
   for (int y = 0; y < size; y++) {
     for (int x = 0; x < size; x++) {
