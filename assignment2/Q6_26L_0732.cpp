@@ -28,7 +28,7 @@ int main() {
       if (d1 <= max_d1) v1 = true;
     }
 
-    // validate cur date
+    // validate current date
     bool v2 = false;
     if (y2 >= 1 && m2 >= 1 && m2 <= 12 && d2 >= 1) {
       int max_d2 = 31;
